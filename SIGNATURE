@@ -1,0 +1,207 @@
+This file contains message digests of all files listed in MANIFEST,
+signed via the Module::Signature module, version 0.55.
+
+To verify the content in this distribution, first make sure you have
+Module::Signature installed, then type:
+
+    % cpansign -v
+
+It will check each file's integrity, as well as the signature's
+validity.  If "==> Signature verified OK! <==" is not displayed,
+the distribution may already have been compromised, and you should
+not run its Makefile.PL or Build.PL.
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+SHA1 c7326234bfc422d737992bc802f4b5405cd4754b Changes
+SHA1 e9104887191f345f4bad74f428bf266975e83c70 MANIFEST
+SHA1 81acdef950107a0e7b94e9f8d2f1d9ddb14929cb Makefile.PL
+SHA1 603bb9de29fb8cba7f13409c546750972eff645d inc/Module/AutoInstall.pm
+SHA1 7e2cfa1b9efe0d502ee57717649c90ba4bd28ba9 inc/Module/Install.pm
+SHA1 182a0df45b65151afdc2be0b7246a2d02d0f0567 inc/Module/Install/AutoInstall.pm
+SHA1 6e1392d80a0f239eecd5664f7f21f922cedb9329 inc/Module/Install/Base.pm
+SHA1 f69417fe831d9cc22a78f00a617afadceade4d81 inc/Module/Install/Can.pm
+SHA1 c61d02895330310048bf388881b5e2e064031561 inc/Module/Install/Fetch.pm
+SHA1 4933b00c3a646da8d223c6957f94552bbd62f8c6 inc/Module/Install/Include.pm
+SHA1 54fcbed19232ec959bb17cfb4410599afc7f0779 inc/Module/Install/Makefile.pm
+SHA1 7d3be9b158e37b2b2c22084740099955623b1d56 inc/Module/Install/Metadata.pm
+SHA1 0a8b66180229ba2f9deaea1fedd0aacf7a7ace6b inc/Module/Install/Win32.pm
+SHA1 d3352eb33fe43a5f3ead513f645224fe34d73bc9 inc/Module/Install/WriteAll.pm
+SHA1 08bac0aee6d675504c1ab8a4113f697294c672e1 lib/Jifty/Plugin/OAuth.pm
+SHA1 8e8667b1d470c10243ed46dddb8e9529ec62266a lib/Jifty/Plugin/OAuth/Action/AuthorizeRequestToken.pm
+SHA1 aa961380641c4d2d422876eb12498918db1e3ad4 lib/Jifty/Plugin/OAuth/Dispatcher.pm
+SHA1 0ebe0c4f268c79ca8e03b34741c4552206e46d7c lib/Jifty/Plugin/OAuth/Model/AccessToken.pm
+SHA1 286caebeef718fc73a53416a0f8d363015a21a71 lib/Jifty/Plugin/OAuth/Model/Consumer.pm
+SHA1 bf49e8f4cb3b4bbc6a4ae035b74ae97ddfc7fa36 lib/Jifty/Plugin/OAuth/Model/RequestToken.pm
+SHA1 0ecb471c00653630443029761dce4816f8b308d3 lib/Jifty/Plugin/OAuth/Token.pm
+SHA1 8210120a1b6a4e5fad42e0e9691858118eb51f82 lib/Jifty/Plugin/OAuth/View.pm
+SHA1 b0dc42eb7e0b87d3f9c920a9a64400b7b271a49f t/Makefile.PL
+SHA1 c1ff9ff7f2a88bc4306b3866b6b80fb9aa8e8423 t/bin/jifty
+SHA1 16b96d806838e0ab88d1b640c8f09be26d65f431 t/etc/config.yml
+SHA1 0a14b3d26fbd625c85cf3bd3c7abeca8f9859e32 t/lib/TestApp/Plugin/OAuth/Dispatcher.pm
+SHA1 40d6556bcc188bd6248099c48b5341bacbba6007 t/lib/TestApp/Plugin/OAuth/Model/Favorite.pm
+SHA1 a612b956e26b173d2dda74d15b9ba5eb8062247a t/lib/TestApp/Plugin/OAuth/Model/User.pm
+SHA1 27dc06ed47eb5e4d065b9b521603e17b4b4f259c t/lib/TestApp/Plugin/OAuth/Test.pm
+SHA1 df3a28c0ac04c289db4e3d0a3b4f7a9b07e37a3c t/lib/TestApp/Plugin/OAuth/View.pm
+SHA1 da39a3ee5e6b4b0d3255bfef95601890afd80709 t/mason0UMSn90dVM/obj/.__obj_create_marker
+SHA1 da39a3ee5e6b4b0d3255bfef95601890afd80709 t/mason5vpx6psOTh/obj/.__obj_create_marker
+SHA1 d6c4951331b2da8921cbc6908d046562774b0d41 t/mason5vpx6psOTh/obj/66770516/jifty/_elements/header.obj
+SHA1 8dd895cfea73427b720429efe3c114629e8415aa t/mason5vpx6psOTh/obj/66770516/jifty/_elements/keybindings.obj
+SHA1 0624a29e4146ac059c0135aacd067b19b4d723a4 t/mason5vpx6psOTh/obj/66770516/jifty/_elements/menu.obj
+SHA1 27c7c31395f3d8f6cd59b41eb1a8c3e5e8f85525 t/mason5vpx6psOTh/obj/66770516/jifty/_elements/nav.obj
+SHA1 e5b3a12ef3eec2ef767fddb054768a7c238102cc t/mason5vpx6psOTh/obj/66770516/jifty/_elements/sidebar.obj
+SHA1 1fc7d9cc253fa5959ecbd927de7b340a0e8220dc t/mason5vpx6psOTh/obj/66770516/jifty/_elements/wrapper.obj
+SHA1 49dd02b2db3f8ebe515df0fee68e0b7cbd29861b t/mason5vpx6psOTh/obj/66770516/jifty/autohandler.obj
+SHA1 678c3580b9e358a3df0f875c90ac7712f3ca9af4 t/mason5vpx6psOTh/obj/66770516/jifty/index.html.obj
+SHA1 da39a3ee5e6b4b0d3255bfef95601890afd80709 t/mason7xLXnbE7za/obj/.__obj_create_marker
+SHA1 ca16019429e214347cb7417e665eaaf8ea5b233d t/mason7xLXnbE7za/obj/66770516/jifty/_elements/header.obj
+SHA1 97282bbe715f3520e52a4b445770c9453c88d371 t/mason7xLXnbE7za/obj/66770516/jifty/_elements/keybindings.obj
+SHA1 566234582dbf52a5d4579c87a8f328e506b4684a t/mason7xLXnbE7za/obj/66770516/jifty/_elements/menu.obj
+SHA1 bf615aa0d236810d38a6a5e9f6567ef944f03e0f t/mason7xLXnbE7za/obj/66770516/jifty/_elements/nav.obj
+SHA1 26cabd799b05f10eb88443980b1128f119b3e953 t/mason7xLXnbE7za/obj/66770516/jifty/_elements/sidebar.obj
+SHA1 5e5dd46ad8650a984a0b5fa57041ddacf234377b t/mason7xLXnbE7za/obj/66770516/jifty/_elements/wrapper.obj
+SHA1 93fae06dccf823a1f1bf6dee6b4921e18bab26fb t/mason7xLXnbE7za/obj/66770516/jifty/autohandler.obj
+SHA1 6ca680c4df74facc1071adf1965a19b00807b74b t/mason7xLXnbE7za/obj/66770516/jifty/index.html.obj
+SHA1 da39a3ee5e6b4b0d3255bfef95601890afd80709 t/mason7ygH2vTdZt/obj/.__obj_create_marker
+SHA1 a2bee38030df3e3d04267b676c01f23c057c5ed3 t/mason7ygH2vTdZt/obj/66770516/jifty/_elements/header.obj
+SHA1 64602fdf3029fe8ede16fb7e407ef0547de6304b t/mason7ygH2vTdZt/obj/66770516/jifty/_elements/keybindings.obj
+SHA1 cd384c9eb6f7ea812287aa5f17d912428cce202a t/mason7ygH2vTdZt/obj/66770516/jifty/_elements/menu.obj
+SHA1 77894f210a493486099af43bd4fe9089ea5e2d54 t/mason7ygH2vTdZt/obj/66770516/jifty/_elements/nav.obj
+SHA1 f5b79711f08dd849c51b1d2215694f5083536c4f t/mason7ygH2vTdZt/obj/66770516/jifty/_elements/sidebar.obj
+SHA1 85593244a216d554fae3fe09df2f0b581d7dfacc t/mason7ygH2vTdZt/obj/66770516/jifty/_elements/wrapper.obj
+SHA1 0a74902528dfe08ec0f632b42fac639700c3e37a t/mason7ygH2vTdZt/obj/66770516/jifty/autohandler.obj
+SHA1 07a8a9fd32a12df06c40a73c6fb65dbce75f6e6b t/mason7ygH2vTdZt/obj/66770516/jifty/index.html.obj
+SHA1 da39a3ee5e6b4b0d3255bfef95601890afd80709 t/mason9Fjp5vGJnK/obj/.__obj_create_marker
+SHA1 9220a70f3ded6b1b11c269518602cdc504683903 t/mason9Fjp5vGJnK/obj/66770516/jifty/_elements/header.obj
+SHA1 0dd7b86a30c62418b1a4979349aadc21599b3762 t/mason9Fjp5vGJnK/obj/66770516/jifty/_elements/keybindings.obj
+SHA1 049db0246830f64ae35b4711192832912b7e6f50 t/mason9Fjp5vGJnK/obj/66770516/jifty/_elements/menu.obj
+SHA1 363f6982504ff1a17574377725b477a5c5ebfe7d t/mason9Fjp5vGJnK/obj/66770516/jifty/_elements/nav.obj
+SHA1 dbd51661ff8179fa300b4efa0f897c69331cb111 t/mason9Fjp5vGJnK/obj/66770516/jifty/_elements/sidebar.obj
+SHA1 3ed81b6dd33ac3f950ce08ca179b8f959c19a45c t/mason9Fjp5vGJnK/obj/66770516/jifty/_elements/wrapper.obj
+SHA1 694278e44c985f6935e59f5457ff8a8c947d2695 t/mason9Fjp5vGJnK/obj/66770516/jifty/autohandler.obj
+SHA1 3f95782e5df3c8a60f3ab33095bcb04f94250b23 t/mason9Fjp5vGJnK/obj/66770516/jifty/index.html.obj
+SHA1 da39a3ee5e6b4b0d3255bfef95601890afd80709 t/mason9iaPDzLbnC/obj/.__obj_create_marker
+SHA1 fc8a90b5c917fa538ec903ac857d1b707acad95f t/mason9iaPDzLbnC/obj/66770516/jifty/_elements/header.obj
+SHA1 8ba0ec3f42433a347de8b9ac10c8660006400acc t/mason9iaPDzLbnC/obj/66770516/jifty/_elements/keybindings.obj
+SHA1 e0b159fec003063a672f8c39d5f23fe8d60b7966 t/mason9iaPDzLbnC/obj/66770516/jifty/_elements/menu.obj
+SHA1 9ab74e86c5ceb7e2437f9e527df86b3d2066e2ca t/mason9iaPDzLbnC/obj/66770516/jifty/_elements/nav.obj
+SHA1 50384f18b8ef76bbd2d6f2d60be8a2b00fe346af t/mason9iaPDzLbnC/obj/66770516/jifty/_elements/sidebar.obj
+SHA1 2aca0850d45153506247e5e93663f53aa730e537 t/mason9iaPDzLbnC/obj/66770516/jifty/_elements/wrapper.obj
+SHA1 47eba7aa69430bee49852f4cbe44d25d278f8fa2 t/mason9iaPDzLbnC/obj/66770516/jifty/autohandler.obj
+SHA1 a553402e48cf0443140074404975023bbbf35c24 t/mason9iaPDzLbnC/obj/66770516/jifty/index.html.obj
+SHA1 da39a3ee5e6b4b0d3255bfef95601890afd80709 t/masonBW2hziMgMd/obj/.__obj_create_marker
+SHA1 8b6c8cf763b3c000d6786f97d4465c97baeeec96 t/masonBW2hziMgMd/obj/66770516/jifty/_elements/header.obj
+SHA1 50c98501d114831b2a7366545b0516271ad70a4f t/masonBW2hziMgMd/obj/66770516/jifty/_elements/keybindings.obj
+SHA1 69b4ebc822ca400e63d24febcbc64b4ee2445207 t/masonBW2hziMgMd/obj/66770516/jifty/_elements/menu.obj
+SHA1 2a0cac98e715c12835a5619c2c02311f76e77971 t/masonBW2hziMgMd/obj/66770516/jifty/_elements/nav.obj
+SHA1 e75b75e4a1bfc0babc98e0ad9d9aa1c0ce7635de t/masonBW2hziMgMd/obj/66770516/jifty/_elements/sidebar.obj
+SHA1 32f9957af46c4c11e3392a236db1ed22ddb0afe9 t/masonBW2hziMgMd/obj/66770516/jifty/_elements/wrapper.obj
+SHA1 249bb7bda32f2af4fa61afe0effd367db33b53a2 t/masonBW2hziMgMd/obj/66770516/jifty/autohandler.obj
+SHA1 ac30fdfda600bde28e970820db5eb483f29ccaa5 t/masonBW2hziMgMd/obj/66770516/jifty/index.html.obj
+SHA1 da39a3ee5e6b4b0d3255bfef95601890afd80709 t/masonCYpDiasMlm/obj/.__obj_create_marker
+SHA1 27de57f900b0bf1125f529558ec15a197c653bbb t/masonCYpDiasMlm/obj/66770516/jifty/_elements/header.obj
+SHA1 b8c105ee6c97f7a21b85d19bae881b3942e6b6f9 t/masonCYpDiasMlm/obj/66770516/jifty/_elements/keybindings.obj
+SHA1 df7dd096f3b73bcab3e7fe3c2fc2279e0255c962 t/masonCYpDiasMlm/obj/66770516/jifty/_elements/menu.obj
+SHA1 1da879c5da0d8d1ab6e3d3447c98302539756c10 t/masonCYpDiasMlm/obj/66770516/jifty/_elements/nav.obj
+SHA1 39e7cec2c09cbe74b1d40da79cf69ca0a0b384e0 t/masonCYpDiasMlm/obj/66770516/jifty/_elements/sidebar.obj
+SHA1 9e7eaaa8fae03ee08aa37a52239451a328280c85 t/masonCYpDiasMlm/obj/66770516/jifty/_elements/wrapper.obj
+SHA1 3adca8ab24b06350e12c9044cf273c0575585834 t/masonCYpDiasMlm/obj/66770516/jifty/autohandler.obj
+SHA1 60ec28097c5ef78b0ca8eaeafec3a9bb23b91dcc t/masonCYpDiasMlm/obj/66770516/jifty/index.html.obj
+SHA1 da39a3ee5e6b4b0d3255bfef95601890afd80709 t/masonE6yn7rcdLq/obj/.__obj_create_marker
+SHA1 949d76ed53ebdbd2ecd79f8514bfc2daf65c61e2 t/masonE6yn7rcdLq/obj/66770516/jifty/_elements/header.obj
+SHA1 37f2f3640aa0e5ff69b7bf85544b0c83cc3cadcf t/masonE6yn7rcdLq/obj/66770516/jifty/_elements/keybindings.obj
+SHA1 74f6ae253a568815ec2eef0b63ba69bd93be9dad t/masonE6yn7rcdLq/obj/66770516/jifty/_elements/menu.obj
+SHA1 3732eef8919c726c018dcb55e5f91f74c471e4a9 t/masonE6yn7rcdLq/obj/66770516/jifty/_elements/nav.obj
+SHA1 f83eeae5479bbe8a42762e7b897f61ae7c4b90e6 t/masonE6yn7rcdLq/obj/66770516/jifty/_elements/sidebar.obj
+SHA1 b6857cd883454b4713c3eed0f348ea26c97c3983 t/masonE6yn7rcdLq/obj/66770516/jifty/_elements/wrapper.obj
+SHA1 3f125b5c1d4323b0a7e728f3ab135a02dcb75fdd t/masonE6yn7rcdLq/obj/66770516/jifty/autohandler.obj
+SHA1 d969bc45eefab0f19149ac42c7c1971ea89d577e t/masonE6yn7rcdLq/obj/66770516/jifty/index.html.obj
+SHA1 da39a3ee5e6b4b0d3255bfef95601890afd80709 t/masonL2EETegiLz/obj/.__obj_create_marker
+SHA1 7d4ab896471990952fae17a90baf19fd4056b823 t/masonL2EETegiLz/obj/66770516/jifty/_elements/header.obj
+SHA1 71cce3f1ac45937b9bed67725674ece55365d3b9 t/masonL2EETegiLz/obj/66770516/jifty/_elements/keybindings.obj
+SHA1 db646a9dd7c7bc9190eb9d70f8382167a5780cb4 t/masonL2EETegiLz/obj/66770516/jifty/_elements/menu.obj
+SHA1 aae105e4b6c7a587e386c95328fbd0b89a28108c t/masonL2EETegiLz/obj/66770516/jifty/_elements/nav.obj
+SHA1 9570e6cf85c823b00ae1ca6e4936bfa959aa6226 t/masonL2EETegiLz/obj/66770516/jifty/_elements/sidebar.obj
+SHA1 2e28621436d8ed4a297cfe807e14eccbbaa7a0dc t/masonL2EETegiLz/obj/66770516/jifty/_elements/wrapper.obj
+SHA1 2d23dec6e5b05e510482f3ac06e62d90bc77e41d t/masonL2EETegiLz/obj/66770516/jifty/autohandler.obj
+SHA1 4cbffd1dae2ab063fbb0ce22fe8c367e3686c440 t/masonL2EETegiLz/obj/66770516/jifty/index.html.obj
+SHA1 da39a3ee5e6b4b0d3255bfef95601890afd80709 t/masonLU1Rx2ZO1r/obj/.__obj_create_marker
+SHA1 418266333c768a0b7b784f02a758e5f25260e810 t/masonLU1Rx2ZO1r/obj/66770516/jifty/_elements/header.obj
+SHA1 b099cf5d5ea96c4c9b69c8128f3bbca448133c0a t/masonLU1Rx2ZO1r/obj/66770516/jifty/_elements/keybindings.obj
+SHA1 7b102fdb8091e636fc221cd67cd542dc78543d23 t/masonLU1Rx2ZO1r/obj/66770516/jifty/_elements/menu.obj
+SHA1 6a03750e573a5ff25316a21203492c583fcc0452 t/masonLU1Rx2ZO1r/obj/66770516/jifty/_elements/nav.obj
+SHA1 3079d58601f57eba893cf57f644a28f3d936b58b t/masonLU1Rx2ZO1r/obj/66770516/jifty/_elements/sidebar.obj
+SHA1 5d642735f8ba7632a7940ef3aaa7a1123a822881 t/masonLU1Rx2ZO1r/obj/66770516/jifty/_elements/wrapper.obj
+SHA1 793d9a652978f51fe732ccd651fc9b300a58ff35 t/masonLU1Rx2ZO1r/obj/66770516/jifty/autohandler.obj
+SHA1 7f62bc3b7b92525fb498b9ac19c2cf861825ae55 t/masonLU1Rx2ZO1r/obj/66770516/jifty/index.html.obj
+SHA1 da39a3ee5e6b4b0d3255bfef95601890afd80709 t/masonO5XjRXKRfw/obj/.__obj_create_marker
+SHA1 4a5417f667ba948605e0387d62df1100c28edb0e t/masonO5XjRXKRfw/obj/66770516/jifty/_elements/header.obj
+SHA1 9c70ea31199bc20f828e2068c82693ab3426869a t/masonO5XjRXKRfw/obj/66770516/jifty/_elements/keybindings.obj
+SHA1 ad778c1238524b43c1722f9af0b3675eef55d869 t/masonO5XjRXKRfw/obj/66770516/jifty/_elements/menu.obj
+SHA1 48f4f4c78c842cb82369c80e918f87eff43c088a t/masonO5XjRXKRfw/obj/66770516/jifty/_elements/nav.obj
+SHA1 03908f8f8b54283c03181344128fb253cd7aab58 t/masonO5XjRXKRfw/obj/66770516/jifty/_elements/sidebar.obj
+SHA1 aa245c0c11048906844fc453892c8aecf2af48d8 t/masonO5XjRXKRfw/obj/66770516/jifty/_elements/wrapper.obj
+SHA1 c06d4e78f4060e9cc456f85787e28728011ee4c6 t/masonO5XjRXKRfw/obj/66770516/jifty/autohandler.obj
+SHA1 3aaf69a6c7fcc45925a7bc7e2fdba1881e18c700 t/masonO5XjRXKRfw/obj/66770516/jifty/index.html.obj
+SHA1 da39a3ee5e6b4b0d3255bfef95601890afd80709 t/masonVVtNMCNll3/obj/.__obj_create_marker
+SHA1 da39a3ee5e6b4b0d3255bfef95601890afd80709 t/masonYdc3MWnmHP/obj/.__obj_create_marker
+SHA1 da39a3ee5e6b4b0d3255bfef95601890afd80709 t/masonZHEsGixWps/obj/.__obj_create_marker
+SHA1 da39a3ee5e6b4b0d3255bfef95601890afd80709 t/masoncrZFTkS4AI/obj/.__obj_create_marker
+SHA1 da39a3ee5e6b4b0d3255bfef95601890afd80709 t/masonhVwBYLR8YE/obj/.__obj_create_marker
+SHA1 66b00bb81e8178c9a45482020656a93756d26a57 t/masonhVwBYLR8YE/obj/66770516/jifty/_elements/header.obj
+SHA1 8ec1c54dbc85bddcb664c10dd1de338a6caa977d t/masonhVwBYLR8YE/obj/66770516/jifty/_elements/keybindings.obj
+SHA1 d0e2e5d395e23ec89a16560b05c73e899ff73d75 t/masonhVwBYLR8YE/obj/66770516/jifty/_elements/menu.obj
+SHA1 6c93aed34ef25ecbbb43976e152f3726f07b8165 t/masonhVwBYLR8YE/obj/66770516/jifty/_elements/nav.obj
+SHA1 6b1d08eda1625aac150a95b6bfdf011c4458bf60 t/masonhVwBYLR8YE/obj/66770516/jifty/_elements/sidebar.obj
+SHA1 1762d48eb442541ba2841d8781079577acd2f4b3 t/masonhVwBYLR8YE/obj/66770516/jifty/_elements/wrapper.obj
+SHA1 cd4fb3d85ed93a3f0f64a9760f6f7ecf3c4f53f0 t/masonhVwBYLR8YE/obj/66770516/jifty/autohandler.obj
+SHA1 20e61b9e64f4aaee0477c3ef106a5dec2951cb33 t/masonhVwBYLR8YE/obj/66770516/jifty/index.html.obj
+SHA1 da39a3ee5e6b4b0d3255bfef95601890afd80709 t/masonl5XwC7vfj4/obj/.__obj_create_marker
+SHA1 ef636c9eee27a5f852debd4d6014785783a8b5a8 t/masonl5XwC7vfj4/obj/66770516/jifty/_elements/header.obj
+SHA1 c49c71365e6cbefebb5c84b445f479859559ae79 t/masonl5XwC7vfj4/obj/66770516/jifty/_elements/keybindings.obj
+SHA1 6382ef968b3ba013d7c2ab187ecda7c7c71eccfe t/masonl5XwC7vfj4/obj/66770516/jifty/_elements/menu.obj
+SHA1 03a8f8c76dbbca45192b4d659b1b0d544a381ad4 t/masonl5XwC7vfj4/obj/66770516/jifty/_elements/nav.obj
+SHA1 c7bb59bb117e6498fe0dff6a84c429821f52766c t/masonl5XwC7vfj4/obj/66770516/jifty/_elements/sidebar.obj
+SHA1 05ffd450009f9b11dd81126977321f19b33efb60 t/masonl5XwC7vfj4/obj/66770516/jifty/_elements/wrapper.obj
+SHA1 2819a9008cff672e2f6ae57c7e301442c8a37aff t/masonl5XwC7vfj4/obj/66770516/jifty/autohandler.obj
+SHA1 aa34fad7aef4212e1ad8734a1a4b2a91ccd32220 t/masonl5XwC7vfj4/obj/66770516/jifty/index.html.obj
+SHA1 da39a3ee5e6b4b0d3255bfef95601890afd80709 t/masonlic4izFg3q/obj/.__obj_create_marker
+SHA1 da39a3ee5e6b4b0d3255bfef95601890afd80709 t/masonoFHctmyzci/obj/.__obj_create_marker
+SHA1 da39a3ee5e6b4b0d3255bfef95601890afd80709 t/masonpUb0P3TUCa/obj/.__obj_create_marker
+SHA1 aea65e5aa8b3226b0c6e4e568660a012e8621a49 t/masonpUb0P3TUCa/obj/66770516/jifty/_elements/header.obj
+SHA1 229b1c887823647d51f478cf69b9d383f3f0ce14 t/masonpUb0P3TUCa/obj/66770516/jifty/_elements/keybindings.obj
+SHA1 b83fc9fcfb258f2a3b1f8a1f6701d3a805c75fe8 t/masonpUb0P3TUCa/obj/66770516/jifty/_elements/menu.obj
+SHA1 a4e99173447087f57ffc63b1b194935201bcf3b4 t/masonpUb0P3TUCa/obj/66770516/jifty/_elements/nav.obj
+SHA1 5ac95e1fb10afa0f3510097bc81b71cc38237ebe t/masonpUb0P3TUCa/obj/66770516/jifty/_elements/sidebar.obj
+SHA1 8b0a65481a09e5b44a37b52a7d9b82f4ce0d7958 t/masonpUb0P3TUCa/obj/66770516/jifty/_elements/wrapper.obj
+SHA1 2db7ebb15f6842be607368e02988502d1647d505 t/masonpUb0P3TUCa/obj/66770516/jifty/autohandler.obj
+SHA1 b005ddd6d8b6184f54daf272587cfbeeb2edc509 t/masonpUb0P3TUCa/obj/66770516/jifty/index.html.obj
+SHA1 da39a3ee5e6b4b0d3255bfef95601890afd80709 t/masonpj0gwdQJce/obj/.__obj_create_marker
+SHA1 13678b96283d334a27baf01f9415f9189cb33ced t/masonpj0gwdQJce/obj/66770516/jifty/_elements/header.obj
+SHA1 294bc90cf4ada0a2e30770680651b0c26a69c5ca t/masonpj0gwdQJce/obj/66770516/jifty/_elements/keybindings.obj
+SHA1 56f93d9ef495f479ae369af543080d97d80cf506 t/masonpj0gwdQJce/obj/66770516/jifty/_elements/menu.obj
+SHA1 02a72ba3e0c68c1d2563d0bd8e5cd4a8d5f9831e t/masonpj0gwdQJce/obj/66770516/jifty/_elements/nav.obj
+SHA1 da82674a3959fc787b04e75d16a543ccaaf806ab t/masonpj0gwdQJce/obj/66770516/jifty/_elements/sidebar.obj
+SHA1 a336d2c560207e254580cb640d69f336394008ab t/masonpj0gwdQJce/obj/66770516/jifty/_elements/wrapper.obj
+SHA1 d2f002664bf35a13324da4e8cd3d679fdd6a7bce t/masonpj0gwdQJce/obj/66770516/jifty/autohandler.obj
+SHA1 92348cd332601a1893337abbc9587b4da5c40992 t/masonpj0gwdQJce/obj/66770516/jifty/index.html.obj
+SHA1 da39a3ee5e6b4b0d3255bfef95601890afd80709 t/masonqmRUJjrPno/obj/.__obj_create_marker
+SHA1 da39a3ee5e6b4b0d3255bfef95601890afd80709 t/masonrR3C96SHkt/obj/.__obj_create_marker
+SHA1 e15f23af124afe157e752f3031056581f2c64a6f t/t/00-test-setup.t
+SHA1 0698fad6589ea8c41fc782878e2239ec559635ec t/t/01-basic.t
+SHA1 8736eff4f69b6c9f09d7280c6fc97f587b380398 t/t/02-request-token.t
+SHA1 689e0261bb92a603c2e840873a443f947cdc01f5 t/t/03-authorize.t
+SHA1 b4fdfbcf451ef1a3836fde656a789f0bd018565a t/t/04-access-token.t
+SHA1 bb1b36caac837fb9ebd2236c2fddf600d309c193 t/t/05-protected-resource.t
+SHA1 b2e8031c7a6b5776cce137f57ed8f48625d84c4d t/t/06-read-only.t
+SHA1 d090c0415042183f6770ce60c8ce356265c5754f t/t/07-read-write.t
+SHA1 e38a2d7034e474f2efb95efdb01afdbb1c675d7d t/t/id_rsa
+SHA1 73fd51a00ea7b52b0feffbc2e11d8fefc918b814 t/t/id_rsa.pub
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.7 (Darwin)
+
+iD8DBQFH++PisxfQtHhyRPoRAqfJAJ9NWCZxGYMi3fzVGx5suxh1yEajSQCgj+Vd
+JhiFyg5X+xN64fXYwce2t48=
+=JTDf
+-----END PGP SIGNATURE-----

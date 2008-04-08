@@ -1,0 +1,59 @@
+package HTML::Mason::Commands;
+use strict;
+use vars qw($m $r $JiftyWeb);
+HTML::Mason::Component::FileBased->new(
+'code' => sub {
+HTML::Mason::Exception::Params->throw
+    ( error =>
+      "Odd number of parameters passed to component expecting name/value pairs"
+    ) if @_ % 2;
+my ( $title );
+{
+    my %pos;
+    for ( my $x = 0; $x < @_; $x += 2 )
+    {
+        $pos{ $_[$x] } = $x + 1;
+    }
+#line 14 /opt/local/lib/perl5/site_perl/5.8.8/auto/Jifty/web/templates/_elements/header
+     $title = exists $pos{'title'} ? $_[ $pos{'title'} ] :  "";
+}
+$m->debug_hook( $m->current_comp->path ) if ( HTML::Mason::Compiler::IN_PERL_DB() );
+
+#line 1 /opt/local/lib/perl5/site_perl/5.8.8/auto/Jifty/web/templates/_elements/header
+use utf8;#line 16 /opt/local/lib/perl5/site_perl/5.8.8/auto/Jifty/web/templates/_elements/header
+
+$r->content_type('text/html; charset=utf-8');
+#line 2 /opt/local/lib/perl5/site_perl/5.8.8/auto/Jifty/web/templates/_elements/header
+$m->print( '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="robots" content="all" />
+  
+  <title>' );
+#line 8 /opt/local/lib/perl5/site_perl/5.8.8/auto/Jifty/web/templates/_elements/header
+$m->print( $m->interp->apply_escapes( (join '', ( _($title) )), 'h' ) );
+#line 8 /opt/local/lib/perl5/site_perl/5.8.8/auto/Jifty/web/templates/_elements/header
+$m->print( '</title>
+  
+  ' );
+#line 10 /opt/local/lib/perl5/site_perl/5.8.8/auto/Jifty/web/templates/_elements/header
+$m->print( $m->interp->apply_escapes( (join '', ( Jifty->web->include_css )), 'h' ) );
+#line 10 /opt/local/lib/perl5/site_perl/5.8.8/auto/Jifty/web/templates/_elements/header
+$m->print( '
+  ' );
+#line 11 /opt/local/lib/perl5/site_perl/5.8.8/auto/Jifty/web/templates/_elements/header
+$m->print( $m->interp->apply_escapes( (join '', ( Jifty->web->include_javascript )), 'h' ) );
+#line 11 /opt/local/lib/perl5/site_perl/5.8.8/auto/Jifty/web/templates/_elements/header
+$m->print( ' 
+</head>
+' );
+;return;
+},
+'declared_args' => {
+  '$title' => { default => ' ""' }
+},
+'load_time' => 1207689155,
+
+)
+;

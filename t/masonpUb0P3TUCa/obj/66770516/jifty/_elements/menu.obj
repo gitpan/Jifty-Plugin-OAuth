@@ -1,0 +1,125 @@
+package HTML::Mason::Commands;
+use strict;
+use vars qw($m $r $JiftyWeb);
+my %_def =
+(
+'.menu' => HTML::Mason::Component::Subcomponent->new(
+'code' => sub {
+HTML::Mason::Exception::Params->throw
+    ( error =>
+      "Odd number of parameters passed to component expecting name/value pairs"
+    ) if @_ % 2;
+my ( $item );
+{
+    my %pos;
+    for ( my $x = 0; $x < @_; $x += 2 )
+    {
+        $pos{ $_[$x] } = $x + 1;
+    }
+
+    foreach my $arg ( qw( item ) )
+    {
+        HTML::Mason::Exception::Params->throw
+            ( error => "no value sent for required parameter '$arg'" )
+                unless exists $pos{$arg};
+    }
+#line 22 /opt/local/lib/perl5/site_perl/5.8.8/auto/Jifty/web/templates/_elements/menu
+    $item = $_[ $pos{'item'} ];
+}
+$m->debug_hook( $m->current_comp->path ) if ( HTML::Mason::Compiler::IN_PERL_DB() );
+
+#line 24 /opt/local/lib/perl5/site_perl/5.8.8/auto/Jifty/web/templates/_elements/menu
+
+    my @kids = $item->children;
+  #line 20 /opt/local/lib/perl5/site_perl/5.8.8/auto/Jifty/web/templates/_elements/menu
+$m->print( '
+  ' );
+#line 24 /opt/local/lib/perl5/site_perl/5.8.8/auto/Jifty/web/templates/_elements/menu
+$m->print( '  ' );
+#line 27 /opt/local/lib/perl5/site_perl/5.8.8/auto/Jifty/web/templates/_elements/menu
+$m->print( '  <li ' );
+#line 27 /opt/local/lib/perl5/site_perl/5.8.8/auto/Jifty/web/templates/_elements/menu
+$m->print(   $item->active ? 'class="active"' : '' );
+#line 27 /opt/local/lib/perl5/site_perl/5.8.8/auto/Jifty/web/templates/_elements/menu
+$m->print( '>' );
+#line 27 /opt/local/lib/perl5/site_perl/5.8.8/auto/Jifty/web/templates/_elements/menu
+$m->print(  $item->as_link );
+#line 27 /opt/local/lib/perl5/site_perl/5.8.8/auto/Jifty/web/templates/_elements/menu
+$m->print(  @kids ? '' : '</li>' );
+#line 27 /opt/local/lib/perl5/site_perl/5.8.8/auto/Jifty/web/templates/_elements/menu
+$m->print( '
+' );
+#line 28 /opt/local/lib/perl5/site_perl/5.8.8/auto/Jifty/web/templates/_elements/menu
+ if (@kids) {
+$m->print( '    <ul class="submenu">
+' );
+#line 30 /opt/local/lib/perl5/site_perl/5.8.8/auto/Jifty/web/templates/_elements/menu
+ $m->comp(".menu", item => $_) for @kids;
+$m->print( '    </ul>
+  </li>
+' );
+#line 33 /opt/local/lib/perl5/site_perl/5.8.8/auto/Jifty/web/templates/_elements/menu
+ }
+;return;
+},
+'declared_args' => {
+  '$item' => { default => undef }
+},
+
+)
+,
+
+);
+HTML::Mason::Component::FileBased->new(
+'code' => sub {
+HTML::Mason::Exception::Params->throw
+    ( error =>
+      "Odd number of parameters passed to component expecting name/value pairs"
+    ) if @_ % 2;
+my ( $menu );
+{
+    my %pos;
+    for ( my $x = 0; $x < @_; $x += 2 )
+    {
+        $pos{ $_[$x] } = $x + 1;
+    }
+#line 3 /opt/local/lib/perl5/site_perl/5.8.8/auto/Jifty/web/templates/_elements/menu
+     $menu = exists $pos{'menu'} ? $_[ $pos{'menu'} ] :  undef;
+}
+$m->debug_hook( $m->current_comp->path ) if ( HTML::Mason::Compiler::IN_PERL_DB() );
+
+#line 1 /opt/local/lib/perl5/site_perl/5.8.8/auto/Jifty/web/templates/_elements/menu
+use utf8;#line 5 /opt/local/lib/perl5/site_perl/5.8.8/auto/Jifty/web/templates/_elements/menu
+
+# Default to the app menu
+$menu = Jifty->web->navigation if not defined $menu;
+#line 9 /opt/local/lib/perl5/site_perl/5.8.8/auto/Jifty/web/templates/_elements/menu
+ my @children = $menu->children;
+ if ( @children ) {
+$m->print( '<ul class="menu">
+' );
+#line 12 /opt/local/lib/perl5/site_perl/5.8.8/auto/Jifty/web/templates/_elements/menu
+
+$m->comp( ".menu", item => $_ )
+    for sort { $a->sort_order <=> $b->sort_order }
+             @children;
+#line 17 /opt/local/lib/perl5/site_perl/5.8.8/auto/Jifty/web/templates/_elements/menu
+$m->print( '</ul>
+' );
+#line 18 /opt/local/lib/perl5/site_perl/5.8.8/auto/Jifty/web/templates/_elements/menu
+ }
+$m->print( '
+' );
+#line 35 /opt/local/lib/perl5/site_perl/5.8.8/auto/Jifty/web/templates/_elements/menu
+$m->print( '
+' );
+;return;
+},
+'declared_args' => {
+  '$menu' => { default => ' undef' }
+},
+'load_time' => 1207690136,
+'subcomps' => \%_def,
+
+)
+;
