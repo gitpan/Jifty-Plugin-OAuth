@@ -6,6 +6,12 @@ use Test::More tests => 9;
 use lib 't/lib';
 use TestApp::Plugin::OAuth::Test;
 
+# this sucks but I can't figure out why I'm getting failures
+# let's see if I can get any useful pointers from testers..
+diag "PLUGINS: " . join ', ', sort map { keys %$_ } @{ Jifty->config->framework('Plugins') };
+diag "APPROOT: " . Jifty::Util->app_root;
+diag "\$0: $0";
+
 # sign PLAINTEXT {{{
 is(sign('POST', 'jjd999tj88uiths3', 'djr9rjt0jd78jf88',
         oauth_signature_method => 'PLAINTEXT'),

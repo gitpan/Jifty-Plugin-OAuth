@@ -103,6 +103,7 @@ The user is authorizing (or denying) a consumer's request token
 sub authorize {
     my @params = qw/token callback/;
     abortmsg(403, "Cannot authorize tokens as an OAuthed user") if Jifty->web->current_user->is_oauthed;
+    abortmsg(401, "Must be authenticated to authorize tokens") if !Jifty->web->current_user->id;
 
     set no_abort => 1;
     my %oauth_params = get_parameters(@params);

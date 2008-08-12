@@ -31,7 +31,8 @@ ok($ok, $msg);
 # }}}
 
 # try to navigate to protected pages while not logged in {{{
-$umech->get_ok($URL . '/oauth/authorize');
+my $response = $umech->get($URL . '/oauth/authorize');
+is($response->code, 401, "/oauth/authorize requires authentication");
 $umech->content_unlike(qr/If you trust this application/);
 
 $umech->get_ok('/oauth/authorized');

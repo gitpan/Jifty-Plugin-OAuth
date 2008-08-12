@@ -1,8 +1,10 @@
-Revision history for Perl extension Jifty-Plugin-OAuth
+0.03 Tue Aug 12 04:39:47 EST 2008
+    * Fail earlier when an unauthenticated user accesses /oauth/authorize
+    * Many doc fixes
 
 0.02 Tue Apr 08 17:21:48 EST 2008
     * separated from the core Jifty distribution
 
-0.01
-    * life begins in jifty/
+0.01 primordial soup era
+    * life begins in the core Jifty distribution
 

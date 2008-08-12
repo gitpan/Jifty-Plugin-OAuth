@@ -3,7 +3,7 @@ use strict;
 use warnings;
 use base qw/Jifty::Plugin/;
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 sub init {
     Jifty::CurrentUser->mk_accessors(qw(is_oauthed oauth_token));
@@ -62,14 +62,16 @@ sub init {
     }
 }
 
+__END__
+
 =head1 NAME
 
 Jifty::Plugin::OAuth - secure API authentication
 
 =head1 DESCRIPTION
 
-A OAuth web services API for your Jifty app. Other applications may have secure
-and limited access to your users' data.
+An OAuth web services API for your Jifty app. Users may grant B<limited>
+authorization to other applications in a secure way.
 
 This plugin adds an C</oauth> set of URLs to your application, listed below. It
 also adds C<is_oauthed> and C<oauth_token> to L<Jifty::CurrentUser>, so you may
@@ -78,12 +80,12 @@ to change users' passwords).
 
 =head2 /oauth
 
-This lists some basic information about OAuth, and where to find more. It also
+This lists some basic information about OAuth, and where to learn more. It also
 tells consumers how they may gain OAuth-ability for your site.
 
 =head2 /oauth/request_token
 
-The URL that consumers POST to get a request token
+The URL at which consumers POST to get a request token
 
 =head2 /oauth/authorize
 
@@ -92,12 +94,12 @@ The URL at which users authorize request tokens
 =head2 /oauth/authorized
 
 After authorizing or denying a request token, users are directed here before
-going back to the consumer's site.
+going back to the consumer's site
 
 =head2 /oauth/access_token
 
 The URL that consumers POST to trade an authorized request token for an access
-token
+token, with which they may act on the user's behalf
 
 =head1 WARNING
 
@@ -122,13 +124,14 @@ plugin enables your Jifty application to be an OAuth service provider.
 
 =item consumer
 
-A consumer is an application that wants to access users' private data. The
-service provider (in this case, this plugin) ensures that this happens securely
-and with users' full approval. Without OAuth (or similar systems), this would
-be accomplished perhaps by the user giving the consumer her login information.
-Obviously not ideal.
+A consumer is an application that wants to access or change users' private
+data. The service provider (in this case, this plugin) ensures that this
+happens securely and with users' full approval. Without OAuth (or similar
+systems), this would be accomplished perhaps by the user giving the consumer
+her login information.  Obviously not ideal.
 
-This plugin does not yet implement the consumer half of the protocol.
+This plugin does not implement the protocol as a consumer, only as a service
+provider. You'll likely want more control and flexibility as a consumer.
 
 =item request token
 
@@ -145,11 +148,23 @@ receive an access token if they have an authorized request token.
 
 =head1 NOTES
 
-You must provide public access to C</oauth/request_token> and
+You must provide consumers access to C</oauth/request_token> and
 C</oauth/access_token>.
 
-You must not allow public access to C</oauth/authorize>. C</oauth/authorize>
-depends on having the user be logged in.
+You could restrict C</oauth/request_token> and C</oauth/access_token> to only
+logged-in users and require consumers to log in. Perhaps you could have a
+column in your users table that represents whether this user is a consumer and
+restrict access to these URLs that way. Or, you could let anyone access these
+URLs. This policy is left you as the developer.
+
+Limiting access is wise because each hit to C</oauth/request_token> and
+C</oauth/access_token> uses some entropy (so an attacker could run a
+denial-of-service attack against you)
+
+You should not allow public access to C</oauth/authorize>. C</oauth/authorize>
+will throw a 401 (unauthorized) error if an unauthenticated user accesses it.
+On unauthenticated access of C</oauth/authorize>, you should tangent the user
+to your login page to improve usability.
 
 You should allow public access to C</oauth>. This has some information for
 consumers.
@@ -197,7 +212,7 @@ in a secure and authorized manner. The way it works is:
 =item
 
 The consumer establishes a key and a secret with the service provider. This
-step only happens once.
+step only happens once, and is currently manual.
 
 =item
 
@@ -256,4 +271,3 @@ Jifty::Plugin::OAuth is distributed under the same terms as Perl itself.
 
 =cut
 
-1;
