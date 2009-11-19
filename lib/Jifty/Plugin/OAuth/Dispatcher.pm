@@ -9,14 +9,17 @@ use Net::OAuth::AccessTokenRequest;
 use Net::OAuth::ProtectedResourceRequest;
 use URI::Escape 'uri_unescape';
 
-on     POST '/oauth/request_token' => \&request_token;
-before GET  '/oauth/authorize'     => \&authorize;
-on     POST '/oauth/authorize'     => \&authorize_post;
-on     POST '/oauth/access_token'  => \&access_token;
-on          '/oauth/authorized'    => run { redirect '/oauth/authorize' };
+# Let the app do auth, etc, before we let these rules run
+after app,
+  before      '/oauth/authorized'  => redirect '/oauth/authorize';
+after app, 
+  before GET  '/oauth/authorize'   => \&authorize;
+on       POST '/oauth/authorize'   => \&authorize_post;
 
-on     GET  '/oauth/request_token' => \&invalid_method;
 on     GET  '/oauth/access_token'  => \&invalid_method;
+on     POST '/oauth/access_token'  => \&access_token;
+on     GET  '/oauth/request_token' => \&invalid_method;
+on     POST '/oauth/request_token' => \&request_token;
 
 before '*' => \&try_oauth;
 

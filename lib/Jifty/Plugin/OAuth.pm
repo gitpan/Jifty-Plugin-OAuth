@@ -3,7 +3,7 @@ use strict;
 use warnings;
 use base qw/Jifty::Plugin/;
 
-our $VERSION = '0.03';
+our $VERSION = '0.04';
 
 sub init {
     Jifty::CurrentUser->mk_accessors(qw(is_oauthed oauth_token));
@@ -62,11 +62,13 @@ sub init {
     }
 }
 
+1;
+
 __END__
 
 =head1 NAME
 
-Jifty::Plugin::OAuth - secure API authentication
+Jifty::Plugin::OAuth - secure API authorization
 
 =head1 DESCRIPTION
 

@@ -4,7 +4,6 @@ use warnings;
 use Jifty::Dispatcher -base;
 
 my @login_required = qw{
-    oauth/authorize
     nuke/?
     =/?
 };
